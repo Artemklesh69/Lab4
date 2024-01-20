@@ -1,0 +1,243 @@
+<!Doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Guide expert</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body class="bg container">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <header>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link href="stile.css" rel="stylesheet"  type = "text/css"/>
+        <nav class = "navbar navbar-expand-lg navbar-light bg-blue" style="background-color:rgb(186, 156, 112);;">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="logo" class="logo" width="650" height="110">
+            <div class="col-xs-2 col-xs-offset-2">
+              Экскурсии по Москве
+            </div>
+          </a>
+          <div class="container">
+            <div class="navbar-collapse collapse show" id="navbarNav" style>
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Личный кабинет</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card bh">
+                <div class="card-body">
+                  <h5 class="card-title ">Описание нашей компании</h5>
+                  <p class="card-text">Наши профессиональные гиды обладают широкими знаниями о истории, культуре и природе мест, которые они показывают. Они способны рассказать увлекательные истории, дать интересные факты и ответить на все ваши вопросы.
+
+                    Мы предлагаем разнообразные экскурсии, включая посещение исторических памятников, музеев, архитектурных достопримечательностей, природных парков и других интересных мест. Мы также организуем пешие и велосипедные прогулки по живописным маршрутам, где вы сможете насладиться красотой природы и уникальными видами.
+                    
+                    Мы также предлагаем индивидуальные туры, которые могут быть адаптированы под ваши интересы и предпочтения..</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card bh">
+                <div class="card-body" style = "padding:0">
+                  <img src="prewiew.png" class="card-img-top" alt="moscow" height="363">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-success" id="notification" style="display: none;">
+            Заявка отправлена!
+          </div>
+          <p class="text-center fs-5 fw-bolder pt-3ё">Достоинства нашей компании</p>
+          <div class="container">
+            <div class="row">
+              <div class="col align-self-start">
+                Гибкий график: Мы предлагаем гибкий график экскурсий, чтобы клиенты могли выбирать удобное время и дату для своих поездок.
+              </div>
+              <div class="col align-self-center">
+                Высокий уровень сервиса: Наша цель - сделать путешествие клиентов незабываемым, интересным и запоминающимся. Наши гиды сделают все возможное, чтобы каждый клиент получил максимум удовольствия от времени с нами.
+              </div>
+              <div class="col align-self-start">
+                Разнообразие языков: Наши гиды владеют различными языками, что позволяет проводить экскурсии на разных языках, обеспечивая комфортное взаимодействие с клиентами из разных стран.
+              </div>
+            </div>
+          </div>
+        <div class="mt-5">
+          <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" id="searchInput" placeholder="Введите название маршрута" class="form-control">
+              </div>
+              <div class="col-md-6">
+                  <select class="form-select" aria-label="Default select example">
+                      <option selected disabled>Выберите объект</option>
+                      <!-- Здесь можно добавить варианты объектов -->
+                  </select>
+              </div>
+          </div>
+      </div>
+        <div class="table-responsive">
+          <table class="t">
+          <thead class="t">
+            <tr>
+              <th scope="col">Название</th>
+              <th scope="col">Описание</th>
+              <th scope="col">Основные объекты</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+          </tbody>
+        </table></div>
+        
+        
+        
+        
+        <div class = "pagination"></div>
+        <h3>Название выбранного маршрута: <span id="routeName"></span></h3>
+        <div class="mt-5">
+          <div class="row">
+              <div class="col-md-6 mb-3 ">
+                
+                  <label for="minExperience">От опыта работы:</label>
+                  <input type="number" class="form-control otd" id="minExperience" placeholder="Мин. опыт">
+                
+                
+                  <label for="maxExperience">До опыта работы:</label>
+                  <input type="number" class="form-control otd" id="maxExperience" placeholder="Макс. опыт">
+                
+              </div>
+          
+              <div class="col-md-6">
+                  <select class="form-select form" aria-label="Default select example">
+                      <option selected disabled>Выберите язык</option>
+                      <!-- Здесь можно добавить варианты объектов -->
+                  </select>
+              </div>
+          </div>
+      </div>
+        <div id="container"></div>
+        <div class="table-responsive">
+          <table class="table">
+          <thead class="table">
+            <tr id="gid">
+              <th scope="col"></th>
+              <th scope="col">ФИО</th>
+              <th scope="col">Языки</th>
+              <th scope="col">Опыт работы</th>
+              <th scope="col">Стоимость услуг в час</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody class="git">
+            
+          </tbody>
+        </table></div>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Оформление заявки</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="form-group">
+                <label for="modal-route-name">Маршрут:</label>
+                <input type="text" class="form-control" id="modal-route-name" readonly>
+              </div>
+              <div class="form-group">
+                <label for="modal-guide-name">Гид:</label>
+                <input type="text" class="form-control" id="modal-guide-name" readonly>
+              </div>
+                          <div class="form-group">
+                              <label for="tour-date">Дата экскурсии:</label>
+                              <input type="date" class="form-control" id="tour-date">
+                          </div>
+                          <div class="form-group">
+                              <label for="tour-time">Время начала экскурсии:</label>
+                              <input type="time" class="form-control" id="tour-time">
+                          </div>
+                          <div class="form-group">
+                              <label for="tour-duration">Длительность экскурсии:</label>
+                              <select class="form-control" id="tour-duration">
+                                  <option value="1">1 час</option>
+                                  <option value="2">2 часа</option>
+                                  <option value="3">3 часа</option>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="group-size">Количество человек в группе:</label>
+                              <input type="number" class="form-control" id="group-size">
+                          </div>
+                          <div class="form-group">
+                              <label>Дополнительные опции:</label>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="option1">
+                                  <label class="form-check-label" for="option1">Скидка для школьников и студентов</label>
+                                  <span>15%</span>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="option2">
+                                  <label class="form-check-label" for="option2">Трансфер до ближайших станций метро после экскурсии </label>
+                                  <span>+25% По будням <br>+30% По выходным</span>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="total-cost">Итоговая стоимость:</label>
+                              <input type="text" class="form-control" id="total-cost" value="0 Руб." readonly>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="showNotification()">Отправить</button>
+                      
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+          <footer style="background-color: rgb(186, 156, 112); color: rgb(42, 3, 3);">
+            <div class="conteiner" id="kontact">
+                <div class="row">
+                    
+                    <div class="col-md-4 col-12 hhh">
+                        <h4>Контакты</h4>
+                        <ul class="list-unstyled">
+                            <li>Телефон :88005553535</li>
+                            <li>Почта : expert_guide@mail.ru</li>
+      
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-12 hhh">
+                        <h4>Социальные сети</h4>
+                            <div class="footer-icon">
+                                <ul class="list-unstyled">
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a><span>expert_guide.facebook</span></li>
+                                <li><a href="#"><i class="fa-brands fa-vk"></i></a><span> expert_guide.com</span></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a><span>   @expert_guide</span></li>
+                                </ul>
+                              </div>
+                      </div>
+                </div>
+      
+            </div>
+        </footer>
+        
+        
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

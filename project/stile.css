@@ -1,0 +1,46 @@
+.bg-blue{
+    background-color:rgb(251, 208, 156);
+
+    
+}
+.t{
+    background-color: rgb(255, 246, 127);
+}
+.tab{
+    background-color: rgb(250, 229, 124);
+}
+.bg{
+    
+    background-color:rgb(137, 253, 255);
+}
+.bh{
+    background-color: rgb(207, 190, 106);
+    
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.ml-auto {
+    margin-left: auto!important;
+}
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+  }
+.alert {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}    
